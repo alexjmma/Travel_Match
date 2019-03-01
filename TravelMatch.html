@@ -1,13 +1,14 @@
 <!doctype html>
-<html>
+<html lang="en-US">
 	
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CPSC362_Project</title>
+<title>TravelMatch</title>
 <link href="Template.css" rel="stylesheet" type="text/css">
 <script>var __adobewebfontsappname__="dreamweaver"</script>
-<script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>
+<script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript">
+</script>
 </head>
 	
 <body>
@@ -25,13 +26,51 @@
 	  </header>
 	<!-- Writing above image Section -->
   <section class="hero" id="hero">
-		<img src="../Desktop/newyork.jpg" alt="New York" >
 		  <div>
 			 <h2 class="centered"> Travel<span class="light">Match</span></h2>
 			 <p class="desc">The fastest way to match your destination</p>
 		  </div>
   </section>
 	</div>
+	<div class="search">
+		<script>
+  (function() {
+    var cx = '013864819046022147398:fzw30okkwwe';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+	</div>
+
+	<div style="height: 500px; width:500px;">
+		<div id="kayakSearchWidetContainer"></div>
+		<script type="text/JavaScript" src="https://www.kayak.com/affiliate/widget-v2.js"></script>
+		<script type="text/JavaScript">
+			KAYAK.embed({
+				container: document.getElementById("kayakSearchWidetContainer"),
+				hostname: "www.kayak.com",
+				autoPosition: true,
+				defaultProduct: "flights",
+				enabledProducts: ["hotels", "flights"],
+				startDate: "2019-03-01"
+				endDate: "2019-04-01",
+				origin: "Fullerton, CA",
+				destination: "Tokyo, Japan",
+				ssl: true,
+				affiliatedId: "TravelMatch",
+				isInternalLoad: false,
+				lc: "en",
+				cc: "us",
+				mc: "EUR",
+			});
+			
+			</script>
 </body>
 	
 </html>
+

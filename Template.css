@@ -1,5 +1,9 @@
 @charset "UTF-8";
 body {
+	background-image: url("homepage_bg.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
 	font-family: Sans-serif;
 	background-color: #f2f2f2;
 	margin-top: 0px;
@@ -13,15 +17,23 @@ body {
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
-	height: 1200px;  /*change this it was 1000px*/
-	background-color: #FFFFF;
+	height: 900px;  /*change this it was 1000px*/
+}
+.search{
+	position: absolute;
+	width: 68%;
+	height: 68%;
+	top: 77%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 /* Navigation Bar*/
 header {
+	position: fixed;
 	width: 100%;
-	height: 5%;
+	height: 7%;
 	background-color: #000000;
-	border-bottom: 1px solid #2C9AB7;
+	border-bottom: 1px solid #000000;
 }
 .logo {
 	color: #fff;
@@ -86,7 +98,7 @@ img {
 	letter-spacing: 2px;
 	color: #FFFFFF;
 	  position: absolute;
-	  top: 50%;
+	  top: 32%;
 	  left: 50%;
 	  transform: translate(-50%, -50%);
 }
@@ -96,7 +108,8 @@ img {
 	font-weight: bold;
 	color: #FFFFFF;
 	  position: absolute;
-	  top: 55%;
+	  top: 37%;
 	  left: 50%;
 	  transform: translate(-50%, -50%);
 }
+
