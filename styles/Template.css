@@ -1,10 +1,10 @@
 @charset "UTF-8";
 body {
-	background-image: url("homepage_bg.jpg");
+	background-image: url("../images/homepage_bg.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
-	font-family: Sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	background-color: #f2f2f2;
 	margin-top: 0px;
 	margin-right: 0px;
@@ -17,7 +17,7 @@ body {
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
-	height: 900px;  /*change this it was 1000px*/
+	height: 960px;  /*change this it was 1000px*/
 }
 .search{
 	position: absolute;
