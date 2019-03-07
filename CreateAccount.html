@@ -20,43 +20,49 @@
 	</div>
 	<br>
 	<br>
-<h2>Create an Account</h2>
-	
-<h3>Profile Information</h3>
+	<h1>Create an Account</h1>
   <!-- Contact details -->
-  <form action="Blank.php" method="POST">
+  <form action="Blank.php" method="POST" >
+	  <fieldset>
+		  <legend><b>Profile Information</b></legend>
+	  <p><label for="FName"><b>First Name:</b></label>
+		  <input type="text" placeholder="Enter First Name" name="FName" required></p>
+		 
+	  	<p><label for="LName"><b>Last Name:</b></label>
+    	<input type="text" placeholder="Enter Last Name" name="LName" required></p>
 	  
-	First Name: <input type="text" name="Fname" />
-	Last Name: <input type="text" name="Lname" />
-	  <br>
-	  Password: <input type="text" name="password" />
-	<br>
-      Age: <input type="text" name="age" /> 
+	  <p><label for="Password"><b>Password:</b></label>
+    	 <input type="password" placeholder="Enter Password" name="password" required></p>
 	  
-	 Gender:<input type="radio" name="gender" value="male"> Male
-  			<input type="radio" name="gender" value="female"> Female
-	  <br>
 	  
-	  <label for="email"><b>Email : </b></label>
+      <p><label for="Age"><b>Age:</b></label>
+		  <input type="text" placeholder="Enter Age" name="age" required></p>
+	  	 <p><label for="Gender"><b>Gender:</b></label>
+    			<input type="radio" name="gender" value="male" required> Male
+		  		<input type="radio" name="gender" value="female"> Female</p>
+	  
+	  <p><label for="email"><b>Email: </b></label>
     <input type="text" placeholder="Enter Email" name="email" required>
-	  <br>
+	  </p>
 	  
-	  <label for="address"><b>Address : </b></label>
-    <input type="text" placeholder="Enter Street Address" name="Address" required>
+	  <p><label for="address"><b>Address: </b></label>
+		  <input type="text" placeholder="Enter Street Address" name="Address" required></p>
+	  <p><label for="city"><b>City:</b></label>
+    <input type="text" placeholder="Enter City" name="city" required></p>
+	
+	  <p><label for="State"><b>State:</b></label>
+		  <input type="text" placeholder="Enter State" name="state" required></p>
 	  
-	  <label for="city"><b>City</b></label>
-    <input type="text" placeholder="Enter City" name="city" required>
-	  <br>
-	  <label for="State"><b>State</b></label>
-    <input type="text" placeholder="Enter State" name="state" required>
-	  
-	  <label for="zipC"><b>Zip Code</b></label>
+	  <p><label for="zipC"><b>Zip Code:</b></label>
     <input type="text" placeholder="Enter Zip Code" name="zipCode" required>
-
-	  <br>
+	  </p>
 	  
 	  <input type="submit" />
+	</fieldset>
 </form>
+  <!-- Previous experience details -->
+  
+  <!-- Links to expore your past projects and download your CV -->
   
 
 </body>
