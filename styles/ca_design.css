@@ -37,10 +37,8 @@ body {
 	margin-left: 0px;
 	font-style: normal;
 }
-h1,h2{
+h1{
 	color:#FFFFFF;
-	margin-left: 3%;
-	margin-top: 2%;
 	-webkit-text-stroke-width: 1px;
   	 -webkit-text-stroke-color: black;
 }
@@ -62,14 +60,11 @@ label {
   padding: 0.25em 1em 0 0;
 }
 fieldset{
-	width:45%;
+	width:70%;
 	background-color: #000000;
 	background: rgba(0, 0, 0, 0.5);
-	margin-left: 45%;
-	margin-top: -28%;
 }
-.image{
-	margin-left: 10%;
-	margin-top: 6%
-	
+form{
+	margin-left: 50%;
+	margin-top: -25px;
 }
