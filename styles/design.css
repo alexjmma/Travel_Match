@@ -42,6 +42,9 @@ h1{
 	-webkit-text-stroke-width: 1px;
   	 -webkit-text-stroke-color: black;
 }
+p{
+	color:#FFFFFF;
+}
 .container {
 	width: 100%;
 	height: 5px;
