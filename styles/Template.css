@@ -146,9 +146,10 @@ fieldset{
 	text-decoration: none;
 	font-size: 1.45em;
 	margin: 0 500px;
-	position: absolute;
+	/* position: absolute; */
 	right: 15%;
 	top: 50%;
+	bottom: 60%;
 	;
 
   }
