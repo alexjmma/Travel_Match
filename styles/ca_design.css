@@ -16,6 +16,7 @@ header {
 	margin-left: 25px;
 	letter-spacing: 5px;
 }
+
 legend{
 	front-weight:bold;
 	color: #FFFFFF;
@@ -67,4 +68,13 @@ fieldset{
 form{
 	margin-left: 50%;
 	margin-top: -25px;
+}
+
+.image{
+	position: absolute;
+	left: 5px;
+	width: 300px;
+	padding: 10px;
+	margin-left: 10%;
+	margin-top: 6%;
 }
