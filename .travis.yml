@@ -1,3 +1,13 @@
+# blocklist
+branches:
+  except:
+  - master
+
+# safelist
+branches:
+  only:
+  - gh-pages
+
 language: node_js
 node_js:
   - "7"
