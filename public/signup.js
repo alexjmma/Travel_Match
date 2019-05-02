@@ -19,7 +19,7 @@ function submit() {
 auth.onAuthStateChanged(firebaseUser => {
     if(firebaseUser) {
         window.alert("Account Created");
-        window.location.replace("index.html");
+        window.location.replace("MainPage.html");
     }
     else {
         console.log('bad test');
