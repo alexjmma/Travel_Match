@@ -11,7 +11,10 @@
     ],
     "rewrites": [
       {
-        "source": "**"
+        "source": "**",
+        "destination": "index.html",
+        "type": 302
+     
     
       }
     ]
