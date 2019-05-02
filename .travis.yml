@@ -2,11 +2,12 @@
 branches:
   except:
   - master
+  - gh-pages
 
 # safelist
 branches:
   only:
-  - gh-pages
+  - Test
 
 language: node_js
 node_js:
