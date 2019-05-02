@@ -1,33 +1,55 @@
 <!doctype html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>mainPage</title>
-<link href="/styles/MainDesign.css" rel="stylesheet" type="text/css">
-</head>
-
-<body>
-	
-	<div class="container">
-		<!-- Navigation Bar -->
-	  <header>
-		<h4 class="logo">TravelMatch</h4>
-		  <nav>
-		  <ul>
-			<li><a href="match.html">DESTINATION MATCH</a></li>
-			<li><a href="index.html">SIGN OUT</a></li>
-		  </ul>
-		</nav>
-	  </header>	
-	</div>
-	<br>
-	<br>
-		<fieldset>
-			<br>
-			<br>
-			<h2>Welcome to TravelMatch!!</h2>
-			<h3 style="text-align:center;">Personalized Destinations</h3>
-			
-	    </fieldset>	  
-</body>
+   <head>
+      <meta charset="UTF-8">
+      <title>mainPage</title>
+      <link href="styles/MainDesign.css" rel="stylesheet" type="text/css">
+   </head>
+   <body>
+      <div class="container">
+         <!-- Navigation Bar -->
+         <header>
+            <h4 class="logo">TravelMatch</h4>
+            <nav>
+               <ul>
+                  <li><a href="match.html">DESTINATION MATCH</a></li>
+                  <li><a href="index.html" onclick="logOut()">SIGN OUT</a></li>
+               </ul>
+            </nav>
+         </header>
+      </div>
+      <br>
+      <br>
+      <fieldset>
+         <br>
+         <br>
+         <h2>Welcome to TravelMatch!!</h2>
+         <h3 style="text-align:center;">Personalized Destinations</h3>
+      </fieldset>
+      <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-auth.js"></script>
+      <script>
+         // Initialize Firebase
+         var config = {
+         	apiKey: "AIzaSyCefzfRMnizKM33q0wwFVN13KfNz9IU-bQ",
+         	authDomain: "travel-match-75d92.firebaseapp.com",
+         	databaseURL: "https://travel-match-75d92.firebaseio.com",
+         	projectId: "travel-match-75d92",
+         	storageBucket: "travel-match-75d92.appspot.com",
+         	messagingSenderId: "28291298335"
+         };
+         firebase.initializeApp(config);
+      </script>
+      <script>
+         function logOut() {
+         	firebase.auth().signOut().then(function() {
+         		 // Sign-out successful.
+         	}).catch(function(error) {
+         	// An error happened.
+         	window.alert(error.message);
+         	});
+         }
+      </script>
+   </body>
 </html>
