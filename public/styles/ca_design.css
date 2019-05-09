@@ -18,7 +18,7 @@ header {
 }
 
 legend{
-	front-weight:bold;
+	font-weight:bold;
 	color: #FFFFFF;
 	font-size: 20px;
 	outline: #000000;
@@ -26,7 +26,7 @@ legend{
    	-webkit-text-stroke-color: black;
 } 
 body {
-	background-image: url("/images/ca_bg.jpg");
+	background-image: url("../images/ca_bg.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
