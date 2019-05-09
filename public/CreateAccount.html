@@ -1,81 +1,78 @@
 <!doctype html>
 <html>
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Profile Info</title>
-      <link href="styles/ca_design.css" rel="stylesheet" type="text/css">
-      <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
-      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-   </head>
-   <body>
-      <div class="container">
-         <!-- Navigation Bar -->
-         <header>
-            <a href="index.html">
-               <h4 class="logo">TravelMatch</h4>
-            </a>
-            <nav>
-               <ul>
-                     <li><a href="SignInPage.html">SIGN IN</a></li>
-               </ul>
-            </nav>
-
-         </header>
-      </div>
-      <br>
-      <br>
-      <h1> Create an Account</h1>
-      <!-- Contact details -->
-      <div>
-         <fieldset style="margin-left: 50%; margin-top: -25px; width: 35%;">
-            <legend><b>Profile Information</b></legend>
-            <p><label for="FName"><b>First Name:</b></label>
-               <input type="text" placeholder="Enter First Name" name="FName" id="FName" required>
-            </p>
-            <p><label for="LName"><b>Last Name:</b></label>
-               <input type="text" placeholder="Enter Last Name" name="LName" id="LName" required>
-            </p>
-            <p><label for="Password"><b>Password:</b></label>
-               <input type="password" placeholder="Enter Password" name="password" id="password" required>
-            </p>
-            <p><label for="Gender"><b>Gender:</b></label>
-               <input type="radio" name="gender" value="male" required> Male
-               <input type="radio" name="gender" value="female"> Female
-            </p>
-            <p><label for="email"><b>Email: </b></label>
-               <input type="text" placeholder="Enter Email" name="email" id="email" required>
-            </p>
-            <p><label for="address"><b>Address: </b></label>
-               <input type="text" placeholder="Enter Street Address" name="Address" required>
-            </p>
-            <p><label for="city"><b>City:</b></label>
-               <input type="text" placeholder="Enter City" name="city" required>
-            </p>
-            <p><label for="State"><b>State:</b></label>
-               <input type="text" placeholder="Enter State" name="state" required>
-            </p>
-            <p><label for="zipC"><b>Zip Code:</b></label>
-               <input type="text" placeholder="Enter Zip Code" name="zipCode" required>
-            </p>
-            <button id=btnSubmit onclick="submit()">Sign Up</button>
-         </fieldset>
-      </div>
-      <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
-      <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-app.js"></script>
-      <script>
-         // Initialize Firebase
-         var config = {
-           apiKey: "AIzaSyCefzfRMnizKM33q0wwFVN13KfNz9IU-bQ",
-           authDomain: "travel-match-75d92.firebaseapp.com",
-           databaseURL: "https://travel-match-75d92.firebaseio.com",
-           projectId: "travel-match-75d92",
-           storageBucket: "travel-match-75d92.appspot.com",
-           messagingSenderId: "28291298335"
-         };
-         firebase.initializeApp(config);
-      </script>
-      <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-auth.js"></script>
-      <script src="signup.js"></script>
-   </body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Create Account</title>
+		<link href="styles/ca_design.css" rel="stylesheet" type="text/css">
+		<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container">
+			<!-- Navigation Bar -->
+			<header>
+				<a href="index.html">
+					<h4 class="logo">TravelMatch</h4>
+				<a>
+			</header>
+		</div>
+		<br>
+		<br>
+		<h1>Create an Account</h1>
+		<!-- Contact details -->
+		<div>
+			<form action="javascript:submit();" method="POST">
+				<fieldset>
+					<legend><b>Profile Information</b></legend>
+					<p><label for="FName"><b>First Name:</b></label>
+						<input type="text" placeholder="Enter First Name" name="FName" id="FName" required>
+					</p>
+					<p><label for="LName"><b>Last Name:</b></label>
+						<input type="text" placeholder="Enter Last Name" name="LName" id="LName" required>
+					</p>
+					<p><label for="Password"><b>Password:</b></label>
+						<input type="password" placeholder="Enter Password" name="password" id="password" required>
+					</p>
+					<p><label for="Gender"><b>Gender:</b></label>
+						<input id="gender" type="radio" name="gender" value="Male" required> Male
+						<input type="radio" name="gender" value="Female"> Female
+					</p>
+					<p><label for="email"><b>Email: </b></label>
+						<input type="text" placeholder="Enter Email" name="email" id="email" required>
+					</p>
+					<p><label for="address"><b>Address: </b></label>
+						<input type="text" placeholder="Enter Street Address" name="Address" id="address" required>
+					</p>
+					<p><label for="city"><b>City:</b></label>
+						<input type="text" placeholder="Enter City" name="city" id="city" required>
+					</p>
+					<p><label for="State"><b>State:</b></label>
+						<input type="text" placeholder="Enter State" name="state" id="state" required>
+					</p>
+					<p><label for="zipC"><b>Zip Code:</b></label>
+						<input type="text" placeholder="Enter Zip Code" name="zipCode" id="zip" required>
+					</p>
+					<input type="submit" value="Sign Up">
+				</fieldset>
+			</form>
+		</div>
+		<script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-app.js"></script>
+		<script>
+			// Initialize Firebase
+			var config = {
+			  apiKey: "AIzaSyCefzfRMnizKM33q0wwFVN13KfNz9IU-bQ",
+			  authDomain: "travel-match-75d92.firebaseapp.com",
+			  databaseURL: "https://travel-match-75d92.firebaseio.com",
+			  projectId: "travel-match-75d92",
+			  storageBucket: "travel-match-75d92.appspot.com",
+			  messagingSenderId: "28291298335"
+			};
+			firebase.initializeApp(config);
+		</script>
+		<script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/6.0.0/firebase-firestore.js"></script>
+		<script src="signup.js"></script>
+	</body>
 </html>
