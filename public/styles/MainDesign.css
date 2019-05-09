@@ -36,7 +36,6 @@ nav ul li {
 	text-align: left;
 	margin-right: 25px;
 	letter-spacing: 1px;
-	font-weight: bold;
 	transition: all 0.3s linear;
 }
 
@@ -57,9 +56,11 @@ body {
 ul li a {
 	color: #FFFFFF;
 	text-decoration: none;
+	font-weight: bold;
 }
 ul li:hover a {
 	color: #2C9AB7;
+	font-weight: bold;
 }
 .signIn_header {
 	color: #000000;
