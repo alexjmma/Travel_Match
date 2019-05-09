@@ -108,12 +108,11 @@ img {
 	  transform: translate(-50%, -50%);
 }
 .desc{
-	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-weight: bold;
 	color: #FFFFFF;
 	position: absolute;
-	top: 37%;
+	top: 36%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
@@ -122,8 +121,13 @@ img {
 	letter-spacing: 1px;
 	font-weight: bold;
 	color: #FFFFFF;
+	display: block;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
 	position: absolute;
-	top: 50%;
+	top: 42%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
