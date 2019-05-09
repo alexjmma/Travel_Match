@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TravelMatch</title>
+<link href="styles/Template.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+	
+<body>
+	
+	<!-- <a href="match.html" target="_blank" class="button">Match Destination</a> -->
+			<!-- <a href="https://www.kayak.com/" target="_blank" class="button gray" class="gray">Travel Deals</a> -->
+	<div class= "container">
+		<!-- Navigation Bar -->
+	  <header> 
+		<a href="">
+		<h4 class="logo">TravelMatch</h4>
+		</a>
+		<nav>
+		  <ul>
+			<li><a href="SignInPage.html">SIGN IN</a></li>
+			<li><a href="CreateAccount.html">CREATE ACCOUNT</a></li>
+		  </ul>
+		</nav>
+	  </header>
+	<!-- Writing above image Section -->
+  <section class="signIn" id="signIn">
+		  <div>
+			 <h2 class="centered"> Travel<span class="light">Match</span></h2>
+			 <p class="desc">The fastest way to match your destination</p>
+			 <p class="desc2">Search for your Match</p>
+			</div>
+  </section>
+	</div>	
+	<script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+	<script>
+		// Initialize Firebase
+		const firebaseConfig = {
+		  apiKey: "AIzaSyBNktXQeeAjkLheLAMEHppiqYFrp-zROsI",
+		  authDomain: "travel-match-1bb1a.firebaseapp.com",
+		  databaseURL: "https://travel-match-1bb1a.firebaseio.com",
+		  projectId: "travel-match-1bb1a",
+		  storageBucket: "travel-match-1bb1a.appspot.com",
+		  messagingSenderId: "183691132093",
+		  appId: "1:183691132093:web:6d49a65c15f64874"
+		};
+		firebase.initializeApp(firebaseConfig);
+		var database = firebase.database()		
+	</script>
+	
+
+	<div class="search">
+		<script>
+  (function() {
+    var cx = '013864819046022147398:fzw30okkwwe';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+	</div>
+</body>	
+</html>
+
