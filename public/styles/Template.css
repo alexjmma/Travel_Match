@@ -75,7 +75,6 @@ ul li a {
 }
 ul li:hover a {
 	color: #2C9AB7;
-	font-weight: bold;
 }
 .signIn_header {
 	color: #000000;
@@ -112,20 +111,21 @@ img {
 	letter-spacing: 1px;
 	font-weight: bold;
 	color: #FFFFFF;
-	position: absolute;
-	top: 37%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	  position: absolute;
+	  top: 37%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
 }
 
 .desc2{
+	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-weight: bold;
 	color: #FFFFFF;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
 }
 legend{
 	font-weight:bold;
