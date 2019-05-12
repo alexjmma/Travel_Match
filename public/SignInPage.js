@@ -5,8 +5,8 @@ const auth = firebase.auth();
 function submit() {
     const email = txtEmail.value;
     const pass = txtPassword.value;
-    console.log(email);
-    console.log(pass);
+    // console.log(email);
+    // console.log(pass);
     auth.signInWithEmailAndPassword(email, pass).catch(function(error) {
         // Handle Errors here.
         var errorCode = error.code;
@@ -22,6 +22,6 @@ auth.onAuthStateChanged(firebaseUser => {
         window.location.replace("MainPage.html");
     }
     else {
-        console.log('bad test');
+       // console.log('bad test');
     }
 })

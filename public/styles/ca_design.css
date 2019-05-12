@@ -16,38 +16,6 @@ header {
 	margin-left: 25px;
 	letter-spacing: 5px;
 }
-nav {
-	float: right;
-	width: 50%;
-	text-align: right;
-	margin-right: 25px;
-	margin-top: 8px;
-}
-
-header nav ul {
-	list-style: none;
-	float: right;
-}
-
-nav ul li {
-	float: left;
-	color: #FFFFFF;
-	font-size: 16px;
-	text-align: left;
-	margin-right: 25px;
-	letter-spacing: 1px;
-	font-weight: bold;
-	transition: all 0.3s linear;
-}
-
-ul li a {
-	color: #FFFFFF;
-	text-decoration: none;
-}
-ul li:hover a {
-	color: #2C9AB7;
-	font-weight: bold;
-}
 
 legend{
 	front-weight:bold;
@@ -58,7 +26,7 @@ legend{
    	-webkit-text-stroke-color: black;
 } 
 body {
-	background-image: url("/images/ca_bg.jpg");
+	background-image: url("../images/ca_bg.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;

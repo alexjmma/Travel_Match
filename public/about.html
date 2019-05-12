@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-US">
 	
 <head>
@@ -13,40 +13,89 @@
 	<div class= "container">
 		<!-- Navigation Bar -->
 	  <header> <a href="index.html">
+		<a href="index.html">
 		<h4 class="logo">TravelMatch</h4>
 		</a>
 		<nav>
-		  <ul>
-			<li><a href="">SIGN OUT</a></li>
+		  <ul id="list">
+			<li><a href="MatchMe.html" id="match_me">DESTINATION MATCH</a></li>
+			<li><a id="logout" onclick="logOut()">SIGN IN</a></li>
+			<li><a href="ContactUs.html">CONTACT US</a></li>
+			<li><a href="MainPage.html">VIEW MATCHES</a></li>
 		  </ul>
 		</nav>
 	  </header>
-	<!-- Writing above image Section -->
-  <section class="about" id="about">
-		  <div>
-			 <h2 class="centered"> About <span class="light">Us</span></h2>
-			 <p class="desc">Thanks for checking us out! <br></p>
-			 <p class="desc2"> <br>Travel Match is a service that curates the perfect travel experience for our customers. We strive to create a user friendly experience that allows destination matching to be a breeze. <br> <br> Travel Match is owned and operated by Alex Ma, Kyle Slater, Laura Solorio, and Matthew Braun </p>
-			</div>
-  </section>
+		<fieldset>
+            <h2>About <span class="dark">Us</span></h2>
+            <div class="about_us" align="center">
+				<p>Thanks for checking us out! </p>
+				<p> 
+					Travel Match is a service that curates the perfect travel experience for our customers. 
+					We strive to create a user friendly experience that allows destination matching to be a breeze. <br>
+					<br> Travel Match is owned and operated by Alex Ma, Kyle Slater, Laura Solorio, and Matthew Braun <br>
+				</p>
+            </div>
+            <h2>Our <span class="dark">Values</span> Are</h2>
+            <div class="about_us" align="center">
+				<p> * Innovation <br>
+					<br> * Disocvery <br>
+					<br> * Simplicity <br>
+					<br> * Accuracy <br>
+				</p>
+            </div>
+		</fieldset>
 	</div>
-	
-
 	<script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-app.js"></script>
+	<script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+	<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
 	<script>
 		// Initialize Firebase
-		var config = {
-			apiKey: "AIzaSyCefzfRMnizKM33q0wwFVN13KfNz9IU-bQ",
-			authDomain: "travel-match-75d92.firebaseapp.com",
-			databaseURL: "https://travel-match-75d92.firebaseio.com",
-			projectId: "travel-match-75d92",
-			storageBucket: "travel-match-75d92.appspot.com",
-			messagingSenderId: "28291298335"
+		const firebaseConfig = {
+		  apiKey: "AIzaSyBNktXQeeAjkLheLAMEHppiqYFrp-zROsI",
+		  authDomain: "travel-match-1bb1a.firebaseapp.com",
+		  databaseURL: "https://travel-match-1bb1a.firebaseio.com",
+		  projectId: "travel-match-1bb1a",
+		  storageBucket: "travel-match-1bb1a.appspot.com",
+		  messagingSenderId: "183691132093",
+		  appId: "1:183691132093:web:6d49a65c15f64874"
 		};
-		firebase.initializeApp(config);
+		firebase.initializeApp(firebaseConfig);
 	</script>
+	<script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-auth.js"></script>
+		<script>
+			function logOut() {
+				var user = firebase.auth().currentUser;
+				if (user){
+					firebase.auth().signOut().then(function() {
+						alert("You have logged out.")
+						// Sign-out successful.
+					}).catch(function(error) {
+						// An error happened.
+						window.alert(error.message);
+					});
+				}
+				else{
+					window.location.replace("SignInPage.html")
+				}
+			}
+		</script>
+		<script>
+			firebase.auth().onAuthStateChanged(function(user) {
+			  if (user) {
+				// console.log(user)
+				document.getElementById("logout").innerHTML = "SIGN OUT";
+				document.getElementById("list").children[0].style.display = "block";
+				document.getElementById("list").children[3].style.display = "block";
+			  } else {
+				// console.log("No user")
+				document.getElementById("logout").innerHTML = "SIGN IN";
+				document.getElementById("list").children[0].style.display = "none";
+				document.getElementById("list").children[3].style.display = "none";
+			  }
+			});
+		</script>
 
 </body>
 	
 </html>
-

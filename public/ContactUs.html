@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>Contact Us</title>
+      <link href="styles/ContactDesign.css" rel="stylesheet" type="text/css">
+   </head>
+   <body>
+      <div class="container">
+         <!-- Navigation Bar -->
+         <header>
+			<a href="index.html">
+            <h4 class="logo">TravelMatch</h4>
+            <nav>
+               <ul>
+                  <li><a id="logout" href="index.html" onclick="logOut()">SIGN OUT</a></li>
+               </ul>
+            </nav>
+         </header>
+      </div>
+      <br>
+      <br>
+      <fieldset style="height:150%; margin-top:0%;">
+         <br>
+         <form method="POST" action="">
+            <fieldset style="background:rgba(0, 20, 50, 0.5); height:35%; width:75%; margin-top:-2%;">
+               <legend style="font-size: 30px;"><b>Contact Us</b></legend>
+                    <p>
+                        <label><b>Enter Name: </b></label><input type="text" placeholder="Your Name" id="Fname" required>
+                    </p>
+                    <p>
+                        <label><b>Enter Email: </b></label><input type="text" placeholder="Your Email" id="Email" required>
+                    </p>
+                    <p>
+                        <label><b>Enter Subject: </b></label><input type="text" placeholder="Subject" id="subject" required>
+                    </p>
+                    <p>
+                        <label><b>What can we help with? </b></label>
+                    </p>
+                    <br>
+                    <br>
+                    <textarea id="issue" style="resize:none; height:40%; width:96%; margin-left:2%;" required></textarea>
+                    <button type="submit" style="margin-left: 2%" onclick="test()">BUTTON</button>
+                    <script>
+						function test(){
+										if(document.getElementById("Fname").value.length < 1 ||
+											document.getElementById("Email").value.length < 1 ||
+											document.getElementById("subject").value.length < 1 ||
+											document.getElementById("issue").value.length < 1){
+												return;
+											}
+										else{
+											alert("Your request has been sent. We will get back to you shortly.");
+											window.location.replace("index.html");
+										}
+									;}
+                    </script>
+            </fieldset>
+         </form>
+         <fieldset style="margin-top:32%; height: 15%; width: 45%;">
+             <legend style="font-size:30px;">Live Chat</legend>
+                <h3 style="float:left; width: 25%; text-align:center; margin-top:7%; margin-left: 10%;">Download Our 24-hour Live Chat Client</h3>
+                <button type="button" style="border-radius:8px; background-color:#AFC8F1; font-size: 175%; margin-left: 20%; margin-top: 11%;">Download</button>
+         </fieldset>
+      </fieldset>
+		<script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+		<script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+		<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+		<!-- <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script> ORIGINAL BEFORE EDIT-->
+		<script>
+			// Initialize Firebase
+			const firebaseConfig = {
+			  apiKey: "AIzaSyBNktXQeeAjkLheLAMEHppiqYFrp-zROsI",
+			  authDomain: "travel-match-1bb1a.firebaseapp.com",
+			  databaseURL: "https://travel-match-1bb1a.firebaseio.com",
+			  projectId: "travel-match-1bb1a",
+			  storageBucket: "travel-match-1bb1a.appspot.com",
+			  messagingSenderId: "183691132093",
+			  appId: "1:183691132093:web:6d49a65c15f64874"
+			};
+			firebase.initializeApp(firebaseConfig);
+		</script>
+      <script>
+         function logOut() {
+         	firebase.auth().signOut().then(function() {
+         		 // Sign-out successful.
+         	}).catch(function(error) {
+         	// An error happened.
+         	window.alert(error.message);
+         	});
+         }
+      </script>
+   </body>
+</html>

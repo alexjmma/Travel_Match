@@ -1,0 +1,49 @@
+New York City*/m/02_286
+Hawaii*r/m/03gh4
+Rome*/m/06c62
+Cancun*CUN
+Orlando*/m/0ply0
+London*/m/04jpl
+Las Vegas*LAS
+Paris*/m/05qtj
+San Fransisco*SFO
+The Maldives*MLE
+Prague*/m/05ywg
+Amalfi Coast, Italy*x/m/0fhsz
+Banff, Alberta*x/m/01_60w
+Great Barrier Reef*x/m/0jbxl
+St Lucia SLU*x/m/01bkb
+Bali, Indonesia*r/m/01p8s
+Costa Rica*r/m/0168t
+British Virgin Islands*r/m/0168t
+Florence, Italy*/m/031y2
+Rio de Janeiro*/m/06gmr
+Machu Picchu, Peru*x/m/0krfy
+Hong Kong*HKG
+Sydney*SYD
+Santorini, Greece*JTR
+Yosemite National Park*x/m/0c_y8
+Barcelona, Spain*/m/01f62
+Argentine Patagonia*FTE
+Dubai*/m/01f08r
+Grand Canyon National Park*x/m/0cnrr
+Phuket, Thailand*HKT
+South Island, New Zealand*r/m/0gslw
+Tahiti*PPT
+Yellowstone National Park*x/m/08874
+Alberta*r/m/0j95
+Ontario*ONT
+Armenia*EVN
+Berlin*/m/0156q
+Brisbane*BNE
+Cambodia*PNH
+Cambridge*CBG
+Egypt*r/m/02k54
+Elqui Valley*LSC
+Guanacaste Province*LIR
+Hoi An*DAD
+Tokyo*/m/07dfk
+Langkawi*LGK
+Los Cabos*x/m/02dfgb
+Matera*x/m/0c66m
+Montecito*SBA

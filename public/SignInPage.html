@@ -1,25 +1,18 @@
 <!doctype html>
 <html lang="en-US">
-
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Sign In</title>
       <link href="styles/Template.css" rel="stylesheet" type="text/css">
-      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
    </head>
    <body>
-      <div class= "container">
+      <div>
          <!-- Navigation Bar -->
          <header>
             <a href="index.html">
                <h4 class="logo">TravelMatch</h4>
             </a>
-            <nav>
-               <ul>
-               <li><a href="CreateAccount.html">CREATE ACCOUNT</a></li>
-               </ul>
-            </nav>
          </header>
       </div>
       <fieldset>
@@ -31,22 +24,25 @@
                <input type="password" placeholder="Enter Password" name="password" id="password" required>
             </p>
             <button id="SignInBtn" onclick="submit()">Sign In</button>
-			</fieldset>
-			<script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
-      <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-app.js"></script>
-      <script>
-         // Initialize Firebase
-         var config = {
-           apiKey: "AIzaSyCefzfRMnizKM33q0wwFVN13KfNz9IU-bQ",
-           authDomain: "travel-match-75d92.firebaseapp.com",
-           databaseURL: "https://travel-match-75d92.firebaseio.com",
-           projectId: "travel-match-75d92",
-           storageBucket: "travel-match-75d92.appspot.com",
-           messagingSenderId: "28291298335"
-         };
-         firebase.initializeApp(config);
-			</script>
-			<script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-auth.js"></script>
-			<script src="SignInPage.js"></script>
+		</fieldset>
+		<script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-app.js"></script>
+		<script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+		<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+		<script>
+			// Initialize Firebase
+			const firebaseConfig = {
+			  apiKey: "AIzaSyBNktXQeeAjkLheLAMEHppiqYFrp-zROsI",
+			  authDomain: "travel-match-1bb1a.firebaseapp.com",
+			  databaseURL: "https://travel-match-1bb1a.firebaseio.com",
+			  projectId: "travel-match-1bb1a",
+			  storageBucket: "travel-match-1bb1a.appspot.com",
+			  messagingSenderId: "183691132093",
+			  appId: "1:183691132093:web:6d49a65c15f64874"
+			};
+			firebase.initializeApp(firebaseConfig);
+		</script>
+		<script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-auth.js"></script>
+		<script src="SignInPage.js"></script>
    </body>
 </html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<!-- Heading -->
+	<head>
+		<meta charset="UTF-8">
+		<title>Match Me!</title>
+		<link href="styles/MatchMe.css" rel="stylesheet" type="text/css">
+	</head>
+	
+	<!-- Body -->
+	<body>
+		<script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+		<script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+		<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+		<!-- <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script> ORIGINAL BEFORE EDIT-->
+		<script>
+			// Initialize Firebase
+			const firebaseConfig = {
+			  apiKey: "AIzaSyBNktXQeeAjkLheLAMEHppiqYFrp-zROsI",
+			  authDomain: "travel-match-1bb1a.firebaseapp.com",
+			  databaseURL: "https://travel-match-1bb1a.firebaseio.com",
+			  projectId: "travel-match-1bb1a",
+			  storageBucket: "travel-match-1bb1a.appspot.com",
+			  messagingSenderId: "183691132093",
+			  appId: "1:183691132093:web:6d49a65c15f64874"
+			};
+			firebase.initializeApp(firebaseConfig);
+		</script>
+		<script src="MatchMe.js"></script>
+		<div>
+			<!-- Navigation Bar -->
+			<header>
+				<a href="index.html">
+					<h1 class="logo">TravelMatch</h1>
+				</a>
+				<nav>
+					<ul>
+						<li><b href="MatchMe.html">DESTINATION MATCH</b></li>
+						<li><a href="index.html" onclick="logOut()">SIGN OUT</a></li>
+					</ul>
+				</nav>
+			</header>
+		</div>
+		<fieldset>
+            <legend align="center"><b>Match Me!</b></legend>
+            <b id="Question">This is the question</b>
+            <div class="selections" align="center">
+				<button id="Option1" onclick="submit(this.id)">This is Option 1</button>
+				<button id="Option2" onclick="submit(this.id)">This is Option 2</button>
+				<button id="Option3" onclick="submit(this.id)">This is Option 3</button>
+				<button id="Option4" onclick="submit(this.id)">This is Option 4</button>
+				<button id="Option5" onclick="submit(this.id)">This is Option 5</button>
+            </div>
+            <div class="submit_button" align="center">
+				<button id="Submit" onclick="finalize()">Submit</button>
+			</div>
+		</fieldset>
+	</body>
+</html>

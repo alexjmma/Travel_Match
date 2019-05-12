@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-	background-image: url("/images/homepage_bg.jpg");
+	background-image: url("../images/about_us.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
@@ -14,21 +14,11 @@ body {
 	overflow: hidden;
 	
 }
-
-
 .container {
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	height: 960px;  /*change this it was 1000px*/
-}
-.search{
-	position: absolute;
-	width: 68%;
-	height: 68%;
-	top: 77%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 }
 /* Navigation Bar*/
 header {
@@ -94,65 +84,10 @@ img {
   left: 0;
 }
 /*  ts=ext under image */
-.light {
+.dark {
 	font-weight: bold;
 	color: #000000;
-}
-.centered {
-	font-weight: bold;
-	letter-spacing: 2px;
-	color: #FFFFFF;
-	  position: absolute;
-	  top: 32%;
-	  left: 50%;
-	  transform: translate(-50%, -50%);
-}
-.desc{
-	letter-spacing: 1px;
-	font-weight: bold;
-	color: #FFFFFF;
-	position: absolute;
-	top: 36%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
-.desc2{
-	letter-spacing: 1px;
-	font-weight: bold;
-	color: #FFFFFF;
-	display: block;
-	margin-block-start: 1em;
-	margin-block-end: 1em;
-	margin-inline-start: 0px;
-	margin-inline-end: 0px;
-	position: absolute;
-	top: 42%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-legend{
-	font-weight:bold;
-	color: #FFFFFF;
-	font-size: 25px;
-	-webkit-text-stroke-width: 0.5px;
-   	-webkit-text-stroke-color: black;
-} 
-
-fieldset{
-	width:30%;
-	background-color: #000000;
-	background: rgba(0, 0, 0, 0.5);
-	font-size: 20px;
-	position: absolute;
-	color:azure;
-	-webkit-text-stroke-width: 0.5px;
-   	-webkit-text-stroke-color: black;
-	  top: 50%;
-	  left: 50%;
-	  transform: translate(-50%, -50%);
-}
-  
+}  
 .button {
 	border-radius: 4px;
 	background-color: #ffffff;
@@ -194,3 +129,31 @@ fieldset{
 	opacity: 1;
 	right: 0;
   }
+  
+fieldset{
+	width:40%;
+	background-color: #000000;
+	background: rgba(0, 0, 0, 0);
+	border: 0 none;
+	font-size: 18px;
+	position: absolute;
+	color:azure;
+	text-align: center;
+	#-webkit-text-stroke-width: 0.5px;
+   	#-webkit-text-stroke-color: black;
+   	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.about_us{
+	letter-spacing: 1px;
+	font-weight: bold;
+	color: #FFFFFF;
+	display: block;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 5px;
+	margin-inline-end: 2px;
+	position: relative;
+}

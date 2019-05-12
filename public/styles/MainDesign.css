@@ -6,7 +6,6 @@ header {
 	z-index: 10;
 	background-color: #000000;
 	border-bottom: 1px solid #000000;
-	font-family: 'Montserrat', sans-serif;
 }
 
 .logo {
@@ -36,6 +35,7 @@ nav ul li {
 	text-align: left;
 	margin-right: 25px;
 	letter-spacing: 1px;
+	font-weight: bold;
 	transition: all 0.3s linear;
 }
 
@@ -56,11 +56,9 @@ body {
 ul li a {
 	color: #FFFFFF;
 	text-decoration: none;
-	font-weight: bold;
 }
 ul li:hover a {
 	color: #2C9AB7;
-	font-weight: bold;
 }
 .signIn_header {
 	color: #000000;
@@ -81,5 +79,5 @@ fieldset{
    	-webkit-text-stroke-color: black;
 	  top: 100%;
 	  left: 50%;
-	transform: translate(-50%, -50%);  
+	transform: translate(-50%, -50%);	  
 }
